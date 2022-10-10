@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+* {
+    margin: 0;
+}
+
+:root {
+    --black:white;
+    --light-green: #DDE1D9;
+}
+
+body {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+header {
+    background-color: var(--black);
+    height: 70px;
+    text-align: right;
+    box-shadow: black 1px 1px 5px;
+    position: sticky;
+    top: 0;
+}
+
+li {
+    display: inline;
+    position: relative;
+    top: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.3em;
+}
+
+.nav-link {
+    padding: 22px 20px;
+}
+
+.nav-link:hover {
+    color: #fff;
+    transition: color 0.5s;
+}
+
+#welcome-section {
+    height: 100vh;
+    color: #fff;
+    background-image: linear-gradient(115deg, rgba(51, 51, 51, 0.61), rgba(0, 0, 0, 0.61)), url(https://image.freepik.com/free-photo/close-up-image-programer-working-his-desk-office_1098-18707.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#hello {
+    padding-top: 210px;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+#subtitle {
+    font-size: 2.2em;
+    margin-right: 175px;
+}
+
+#projects {
+    background-color: #333;
+    color: #fff;
+    padding: 65px;
+}
+
+h2 {
+    font-size: 3em;
+    margin-bottom: 16px;
+}
+
+.project-tile {
+    background-color: var(--light-green);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.project-tile:hover {
+    background-color: var(--rose);
+    transition: background-color 0.5s;
+}
+
+.active {
+    background-color: #c0c0c0;
+}
+
+#contact {
+    background-color: #c0c0c0;
+    padding: 80px;
+}
+
+.subtitles {
+    font-size: 1.3em;
+    font-style: italic;
+    margin-bottom: 60px;
+}
+
+.contact-link {
+    margin-right: 15px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.contact-link:hover {
+    color: rgb(152, 16, 156);
+    transition: color 0.5s;
+}
+
+img {
+    width: 30px;
+}
+
+footer {
+    background-color: var(--light-green);
+    padding: 30px;
+}
+
+.credits {
+    font-size: 0.8em;
+    color: rgb(51, 51, 51);
+}
+
+@media (max-width:1500px) {
+    iframe {
+        width: 100%;
+    }
+}
+
+@media (max-width:550px) {
+    body {
+        font-size: 3vw;
+    }
+    #subtitle {
+        margin-right: 150px;
+    }
+    #projects {
+        padding: 65px 20px;
+    }
+    iframe {
+        width: 100%;
+    }
+}
+
+@media (max-width:415px) {
+    #subtitle {
+        margin-right: 120px;
+    }
+    li {
+        top: 25px;
+    }
+    iframe {
+        width: 100%;
+    }
+}
